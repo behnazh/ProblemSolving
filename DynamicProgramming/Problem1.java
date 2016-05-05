@@ -1,3 +1,11 @@
+/*
+This is a very standard problem. Given a list of N ordered integers find the longest increasing subsequence in this list. Example: If the list is [16, 3, 5, 19, 10, 14, 12, 0, 15] one possible answer is the subsequence [3, 5, 10, 12, 15], another is [3, 5, 10, 14, 15].
+
+Try designing a solution, which will work efficiently for N <= 2,000. Can you think of a solution working fast enough for N <= 2,000,000? You can experiment by generating your own tests and running your solution against them.
+*/
+
+
+
 import java.util.*;
 
 public class Problem1{
@@ -46,8 +54,6 @@ public class Problem1{
 	}
 
 	private void appendOrCreateNewList(List<Integer> list, int number, Set<List<Integer>> new_lists){
-		//test
-		//print_array(list.toArray());
 		int i;
 		for(i = 0; i < list.size(); i++){
 			if(list.get(i) > number){

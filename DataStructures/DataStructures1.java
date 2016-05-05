@@ -1,3 +1,8 @@
+/*
+ Design a data structure, which allows the regular heap operations of push and pop but can also return the median of all inserted elements with constant time (O(1)).
+*/
+
+
 public class DataStructures1{
 
 	MaxHeap small;
